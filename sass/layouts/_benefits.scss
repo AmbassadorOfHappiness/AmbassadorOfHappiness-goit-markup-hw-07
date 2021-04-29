@@ -1,0 +1,35 @@
+.benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.benefits__title {
+    margin-bottom: -30px;
+    padding-bottom: 50px;
+}
+
+.benefits__item {
+    position: relative;
+    --grid__item: 3;
+}
+
+.benefits__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.benefits__content {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+}

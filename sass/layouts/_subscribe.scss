@@ -1,0 +1,32 @@
+.subscribe {
+    display: inline-flex;
+    padding-top: 20px;
+}
+
+.subscribe__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.subscribe__input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--footer-text-color);
+    width: 381px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: var(--dark-background-color);
+    border-radius: 4px;
+    padding-left: 15px;
+}
+
+.subscribe__icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--white-text-color);
+    margin-left: 10px;
+}
