@@ -310,23 +310,6 @@ img {
   fill: var(--white-text-color);
 }
 
-.social-list__link .social-list__icon {
-  fill: var(--icon-background-color);
-  transition: var(--animation);
-  transition-property: fill;
-}
-
-/* 
-.social-list__link:hover,
-.social-list__link:focus {
-    background-color: var(--accent-color);
-} */
-.social-list__link {
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: var(--animation);
-  transition-property: background-color;
-}
-
 .social-list__icon {
   width: 20px;
   height: 20px;
@@ -334,12 +317,28 @@ img {
   transition-property: fill;
 }
 
+.social-list__link .social-list__icon {
+  fill: var(--icon-background-color);
+  transition: var(--animation);
+  transition-property: fill;
+}
+
+.social-list__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: var(--animation);
+  transition-property: background-color;
+}
+
 .social-list__footer {
   margin-top: 20px;
 }
 
 .social-list__icon--active {
+  width: 20px;
+  height: 20px;
   fill: var(--white-text-color);
+  transition: var(--animation);
+  transition-property: fill;
 }
 
 .form {
@@ -387,11 +386,6 @@ img {
   height: 40px;
 }
 
-.form__input--comment {
-  padding-left: 15px;
-  height: 120px;
-}
-
 .form__input:focus {
   border-color: var(--accent-color);
   transition: var(--animation);
@@ -405,6 +399,15 @@ img {
   border-color: red;
 }
 
+.form__input:focus + .form__icon {
+  fill: var(--accent-color);
+}
+
+.form__input--comment {
+  padding-left: 15px;
+  height: 120px;
+}
+
 .form__button {
   position: relative;
   left: 50%;
@@ -414,10 +417,6 @@ img {
 
 .form__policy {
   border: 1px solid var(--accent-color);
-}
-
-.form__input:focus + .form__icon {
-  fill: var(--accent-color);
 }
 
 .form__icon {
@@ -579,8 +578,7 @@ textarea {
   background: var(--white-text-color);
 }
 
-.portfolio__element:hover,
-.portfolio__element:focus {
+.portfolio__element:hover, .portfolio__element:focus {
   background: var(--white-text-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
@@ -589,6 +587,11 @@ textarea {
 
 .portfolio__element:nth-child(3n) {
   margin-right: 0;
+}
+
+.portfolio__element:hover .card__overlay,
+.portfolio__element:focus .card__overlay {
+  transform: translateY(0);
 }
 
 .card {
@@ -620,11 +623,6 @@ textarea {
 
 .card__content {
   padding: 20px 24px;
-}
-
-.portfolio__link:hover .card__overlay,
-.portfolio__link:focus .card__overlay {
-  transform: translateY(0);
 }
 
 .card__title {
@@ -837,7 +835,9 @@ textarea {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-text-color);
 }
@@ -911,20 +911,19 @@ textarea {
   border: 1px solid #afb1b8;
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid var(--accent-color);
+}
+
+.clients__link:hover .clients__logo,
+.clients__link:focus .clients__logo {
+  fill: var(--accent-color);
 }
 
 .clients__logo {
   fill: #afb1b8;
   transition: var(--animation);
   transition-property: fill;
-}
-
-.clients__link:hover .clients__logo,
-.clients__link:focus .clients__logo {
-  fill: var(--accent-color);
 }
 
 .footer {
@@ -946,20 +945,21 @@ textarea {
 }
 
 .footer__contacts {
-  margin-top: 20px;
-}
-
-.footer__contacts .link {
-  display: block;
+  padding-top: 20px;
 }
 
 .footer-adds {
-  font-weight: 500;
+  display: block;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
   letter-spacing: 0.02em;
-  padding-top: 9px;
+  padding-bottom: 9px;
   color: var(--footer-text-color);
+}
+
+.footer__contacts li:first-child .footer-adds {
+  color: var(--white-text-color);
 }
 
 .footer__title {

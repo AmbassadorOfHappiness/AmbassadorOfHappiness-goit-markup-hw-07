@@ -5,18 +5,19 @@
 
 .features__item {
     --grid__item: 4;
-}
 
-.features__item::before {
-    display: block;
-    content: '';
-    width: 270px;
-    height: 120px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
-    background-color: var(--grey-background-color);
-    margin-bottom: 30px;
+
+    &::before {
+        display: block;
+        content: '';
+        width: 270px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 4px;
+        background-color: var(--grey-background-color);
+        margin-bottom: 30px;
+    }
 }
 
 .features__title {

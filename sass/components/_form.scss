@@ -41,24 +41,27 @@
     border-radius: 4px;
     padding-left: 40px;
     height: 40px;
-}
 
+    &:focus {
+    border-color: var(--accent-color);
+    transition: var(--animation);
+    }
+
+    &:valid:not(:focus) {
+    color: var(--header-text-color);
+    }
+
+    &:invalid:not(:focus) {
+    border-color: red;
+    }
+    &:focus + .form__icon {
+        fill: var(--accent-color);
+    }
+}
+   
 .form__input--comment {
     padding-left: 15px;
     height: 120px;
-}
-
-.form__input:focus {
-    border-color: var(--accent-color);
-    transition: var(--animation);
-}
-
-.form__input:valid:not(:focus) {
-    color: var(--header-text-color);
-}
-
-.form__input:invalid:not(:focus) {
-    border-color: red;
 }
 
 .form__button {
@@ -70,10 +73,6 @@
 
 .form__policy {
     border: 1px solid var(--accent-color);
-}
-
-.form__input:focus + .form__icon {
-    fill: var(--accent-color);
 }
 
 .form__icon {
