@@ -13,9 +13,9 @@
     display: inline-block;
     transition: var(--animation);
     transition-property: color;
-}
 
-.button:hover,
-.button:focus {
-    color: var(--white-text-color);
+    &:hover,
+    &:focus {
+        color: var(--white-text-color);
+    }
 }

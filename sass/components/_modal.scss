@@ -49,10 +49,10 @@
     width: 18px;
     height: 18px;
     fill: var(--logo-color);
-}
 
-.modal__btn-close:focus .modal__icon {
-    fill: var(--accent-color);
+    .modal__btn-close:focus & {
+        fill: var(--accent-color);
+    }
 }
 
 textarea {

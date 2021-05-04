@@ -18,16 +18,16 @@
     background-color: var(--white-text-color);
     transition: var(--animation);
     transition-property: color, background-color;
-}
 
-.social-list__link:hover,
-.social-list__link:focus {
-    background-color: var(--accent-color);
-}
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
 
-.social-list__link:hover .social-list__icon,
-.social-list__link:focus .social-list__icon {
-    fill: var(--white-text-color);
+    &:hover .social-list__icon,
+    &:focus .social-list__icon {
+        fill: var(--white-text-color);
+    }
 }
 
 .social-list__icon {

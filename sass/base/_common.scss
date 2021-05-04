@@ -50,16 +50,15 @@ img {
 }
 
 .link {
-    /* убрали подчеркивание*/
     text-decoration: none;
     color: inherit;
     transition: var(--animation);
     transition-property: color;
-}
 
-.link:hover,
-.link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .list {
